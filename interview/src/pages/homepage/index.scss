@@ -1,0 +1,139 @@
+.homepage {
+  .banner {
+    width: 100%;
+    height: 478px;
+    overflow: hidden;
+    position: relative;
+    img {
+      vertical-align: middle;
+      width: 1440px;
+      height: 478px;
+    }
+    .mask-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(31,56,88,0.40);
+    }
+    .search-box {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -500px;
+      width: 1000px;
+      height: 478px;
+      .search-box-content {
+        width: 490px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        p {
+          margin: 0;
+          font-size: 54px;
+          color: #fff;
+          line-height: 56px;
+          &:nth-child(3) {
+            font-size: 34px;
+            color: #fff;
+            margin-bottom: 38px;
+            line-height: 48px;        
+          }
+        }
+        .search-input-box {
+          height: 60px;
+          position: relative;
+          .search-bg {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+          }
+          input {
+            box-sizing: border-box;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: none;
+            border-radius: 3px;
+            position: absolute;
+            z-index: 10;
+          }
+          .search-input {
+            width: 368px;
+            padding: 6px 0;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-indent: 10px;
+          }
+          .search-sub {
+            color: #fff;
+            right: 10px;
+            background: #f37327;
+            margin-top: 10px;
+            font-size: 14px;
+            width: 92px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .hot-search {
+      font-size: 12px;
+      color: rgba(255,255,255,0.80);
+      text-align: center;
+      a {
+        color: rgba(255,255,255,0.80);
+        text-decoration: none;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  .job-box {
+    height: 364px;
+    overflow: hidden;
+    .job-content {
+      margin: 32px auto;
+      width: 1180px;
+      height: 300px;
+      & > div {
+        &:nth-child(1) {
+          float: left;
+          width: 850px;
+          height: 300px;
+          box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+          border-radius: 3px;
+        }
+        &:nth-child(2) {
+          float: right;
+          width: 310px;
+          height: 300px;
+          img {
+            cursor: pointer;
+            display: block;
+            box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+            border-radius: 3px;
+            &:nth-child(1) {
+              width: 179px;
+              height: 68px;
+              padding: 36px 65px;
+              margin-bottom: 20px;
+            }
+            &:nth-child(2) {
+              width: 260px;
+              height: 38px;
+              padding: 51px 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
